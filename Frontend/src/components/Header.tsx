@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { siteData } from "../data/siteData";
 
 export default function Header() {
+  const location = useLocation();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -11,6 +12,14 @@ export default function Header() {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const isHome = location.pathname === "/";
+  const isLightHeader = (isHome && !scrolled) || scrolled;
+  const navLinkClass = isLightHeader
+    ? "font-mono text-xs tracking-widest text-chalk-200/80 hover:text-amber-signal transition-colors uppercase"
+    : "font-mono text-xs tracking-widest text-ink-900 hover:text-ball-600 transition-colors uppercase";
+  const brandTextClass = isLightHeader ? "font-display text-lg tracking-wide text-chalk-100 uppercase" : "font-display text-lg tracking-wide text-ink-900 uppercase";
+  const mobileButtonClass = isLightHeader ? "md:hidden text-chalk-100 p-2" : "md:hidden text-ink-900 p-2";
 
   return (
     <header
@@ -24,18 +33,12 @@ export default function Header() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-ball-500 opacity-75" />
             <span className="relative inline-flex rounded-full h-3 w-3 bg-ball-500" />
           </span>
-          <span className="font-display text-lg tracking-wide text-chalk-100 uppercase">
-            {siteData.brand.name}
-          </span>
+          <span className={brandTextClass}>{siteData.brand.name}</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
           {siteData.nav.map((item) => (
-            <Link
-              key={item.href}
-              to={item.href}
-              className="font-mono text-xs tracking-widest text-chalk-200/80 hover:text-amber-signal transition-colors uppercase"
-            >
+            <Link key={item.href} to={item.href} className={navLinkClass}>
               {item.label}
             </Link>
           ))}
@@ -50,7 +53,7 @@ export default function Header() {
         </nav>
 
         <button
-          className="md:hidden text-chalk-100 p-2"
+          className={mobileButtonClass}
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
