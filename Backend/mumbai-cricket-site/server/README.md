@@ -81,7 +81,7 @@ passwords won't work over SMTP.
 2. From the app's WhatsApp → API Setup page: an access token and a
    "Phone number ID".
 3. `WHATSAPP_TO` — your own business WhatsApp number, digits only with
-   country code (e.g. `919876543210`), which is where enquiries land.
+   country code (e.g. `918652654866`), which is where enquiries land.
 
 Set `WHATSAPP_TOKEN`, `WHATSAPP_PHONE_NUMBER_ID`, and `WHATSAPP_TO` in `.env`.
 

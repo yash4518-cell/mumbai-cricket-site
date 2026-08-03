@@ -47,6 +47,9 @@ src/
   (e.g. Formspree, a serverless function) before it can actually receive submissions.
   The WhatsApp, call and email links above the form work immediately since they just
   open your device's app.
+- The current demo contact details in `src/data/siteData.ts` are:
+  - Phone/WhatsApp: `+91 86526 54866`
+  - Email: `sushmore27@gmail.com`
 - Fonts (Anton, Work Sans, Space Mono) load from Google Fonts via a `<link>` in
   `index.html`.
 - Replace the placeholder phone/email/WhatsApp number and match/testimonial content in
