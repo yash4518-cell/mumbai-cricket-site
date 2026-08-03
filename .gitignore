@@ -25,3 +25,6 @@ Thumbs.db
 
 # Root-only lockfile stray file
 /package-lock.json
+
+# Atlas credentials and other local secrets
+atlas-credentials.env
