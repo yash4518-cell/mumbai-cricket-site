@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  /* Broadcast scoreboard palette — floodlit maidan at night */
+  --color-pitch-950: #08211a;
+  --color-pitch-900: #0b3b2e;
+  --color-pitch-800: #124a3a;
+  --color-pitch-700: #1a5c47;
+
+  --color-ball-600: #a01f24;
+  --color-ball-500: #c1272d;
+  --color-ball-400: #d94a45;
+
+  --color-clay-500: #c98a4b;
+  --color-clay-400: #dba468;
+
+  --color-amber-signal: #ffb100;
+
+  --color-chalk-50: #f8f6ef;
+  --color-chalk-100: #f5f3ea;
+  --color-chalk-200: #e8e3d3;
+
+  --color-ink-900: #14201b;
+  --color-ink-700: #2a382f;
+
+  --font-display: "Anton", "Arial Narrow", sans-serif;
+  --font-body: "Work Sans", "Segoe UI", sans-serif;
+  --font-mono: "Space Mono", "Courier New", monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-chalk-100);
+    color: var(--color-ink-900);
+    font-family: var(--font-body);
+  }
+  ::selection {
+    background-color: var(--color-amber-signal);
+    color: var(--color-ink-900);
+  }
+}
+
+@layer utilities {
+  .text-stroke-chalk {
+    -webkit-text-stroke: 1.5px var(--color-chalk-100);
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

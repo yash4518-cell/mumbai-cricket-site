@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  /* Dark green broadcast palette */
+  --color-pitch-950: #06180f;
+  --color-pitch-900: #0b2618;
+  --color-pitch-800: #103623;
+  --color-pitch-700: #155031;
+
+  --color-ball-600: #a71d25;
+  --color-ball-500: #c1272d;
+  --color-ball-400: #f2b913;
+
+  --color-clay-500: #102a1d;
+  --color-clay-400: #13402b;
+
+  --color-amber-signal: #f2b913;
+
+  --color-chalk-50: #06180f;
+  --color-chalk-100: #0b2618;
+  --color-chalk-200: #103623;
+
+  --color-ink-900: #ffffff;
+  --color-ink-700: #d8c68c;
+  --color-ink-200: #f5ead0;
+  --color-ink-100: #f3e8cf;
+
+  --font-display: "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-chalk-50);
+    background-image: radial-gradient(circle at top center, rgba(242, 185, 19, 0.08), transparent 25%),
+      repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0px, rgba(255, 255, 255, 0.04) 1px, transparent 1px, transparent 4rem);
+    background-attachment: fixed;
+    color: var(--color-ink-900);
+    font-family: var(--font-body);
+  }
+  ::selection {
+    background-color: var(--color-amber-signal);
+    color: var(--color-ink-900);
+  }
+}
+
+@layer utilities {
+  .text-stroke-chalk {
+    -webkit-text-stroke: 1.5px var(--color-chalk-100);
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
