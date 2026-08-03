@@ -42,6 +42,10 @@ See **`server/README.md`** for API routes, admin auth, and deployment notes.
 See **`src/data/siteData.ts`** for all the frontend copy (text, pricing,
 grounds, testimonials) that isn't pulled from the database.
 
+Current contact details in `src/data/siteData.ts` are:
+- Phone/WhatsApp: `+91 86526 54866`
+- Email: `sushmore27@gmail.com`
+
 ## Push this to GitHub
 
 From this folder:
