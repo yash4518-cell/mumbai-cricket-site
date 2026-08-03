@@ -10,9 +10,9 @@ export const siteData = {
   },
 
   contact: {
-    phone: "86526 54866",
+    phone: "+91 86526 54866",
     whatsapp: "918652654866",
-    email: "book@mumbaicricket.live",
+    email: "sushmore27@gmail.com",
     location: "Mumbai, Maharashtra",
     availability: "Mon–Sun, 9 AM – 9 PM",
   },

@@ -221,7 +221,7 @@ export default function Contact() {
                       name="phone"
                       type="tel"
                       className="mt-2 w-full bg-chalk-50 border border-chalk-200 rounded-sm px-4 py-3 text-ink-900 placeholder:text-ink-500 focus:outline-none focus:border-ball-600"
-                      placeholder="98765 43210"
+                      placeholder="86526 54866"
                     />
                   </div>
                 </div>
