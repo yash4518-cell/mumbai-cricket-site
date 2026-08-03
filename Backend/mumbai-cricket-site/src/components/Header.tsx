@@ -13,8 +13,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const isLightBackgroundPage = ["/", "/past-streams"].includes(location.pathname);
-  const isDarkText = !scrolled ? isLightBackgroundPage : !isLightBackgroundPage;
+  const isDarkText = !scrolled && location.pathname === "/past-streams";
   const navLinkClass = isDarkText
     ? "font-mono text-xs tracking-widest text-ink-900 hover:text-ball-600 transition-colors uppercase"
     : "font-mono text-xs tracking-widest text-chalk-100 hover:text-ball-400 transition-colors uppercase";
