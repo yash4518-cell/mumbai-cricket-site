@@ -13,13 +13,13 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const isHome = location.pathname === "/";
-  const isLightHeader = (isHome && !scrolled) || scrolled;
-  const navLinkClass = isLightHeader
-    ? "font-mono text-xs tracking-widest text-chalk-100 hover:text-ball-400 transition-colors uppercase"
-    : "font-mono text-xs tracking-widest text-ink-700 hover:text-ball-600 transition-colors uppercase";
-  const brandTextClass = isLightHeader ? "font-display text-lg tracking-wide text-chalk-100 uppercase" : "font-display text-lg tracking-wide text-ink-900 uppercase";
-  const mobileButtonClass = isLightHeader ? "md:hidden text-chalk-100 p-2" : "md:hidden text-ink-900 p-2";
+  const isLightBackgroundPage = ["/", "/past-streams"].includes(location.pathname);
+  const isDarkText = !scrolled ? isLightBackgroundPage : !isLightBackgroundPage;
+  const navLinkClass = isDarkText
+    ? "font-mono text-xs tracking-widest text-ink-900 hover:text-ball-600 transition-colors uppercase"
+    : "font-mono text-xs tracking-widest text-chalk-100 hover:text-ball-400 transition-colors uppercase";
+  const brandTextClass = isDarkText ? "font-display text-lg tracking-wide text-ink-900 uppercase" : "font-display text-lg tracking-wide text-chalk-100 uppercase";
+  const mobileButtonClass = isDarkText ? "md:hidden text-ink-900 p-2" : "md:hidden text-chalk-100 p-2";
 
   return (
     <header
