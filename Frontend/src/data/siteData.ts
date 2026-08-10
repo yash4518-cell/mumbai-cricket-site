@@ -86,7 +86,7 @@ export const siteData = {
 
   streams: {
     eyebrow: "PAST BROADCASTS",
-    heading: "Recent matches we've called live.",
+    heading: "Matches we've called live.",
     body: "A look at the coverage on the channel — tap through to watch any match in full.",
     matches: [
       {
