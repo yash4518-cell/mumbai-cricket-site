@@ -2,9 +2,9 @@ import SectionTag from "./SectionTag";
 
 const crewData = [
   {
-    title: "Block 1",
+    title: "Operators",
     role: "Operator",
-    members: ["Yash Nadkar", "Soham Jadhav", "Idrish Badgujar"],
+    members: ["Yash Nadkar", "Soham Jadhav", "Idrish Badgujar", "Samip Gurav"],
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-7 h-7">
         <path strokeLinecap="round" strokeLinejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" />
@@ -12,9 +12,9 @@ const crewData = [
     ),
   },
   {
-    title: "Block 2",
+    title: "Cameraman",
     role: "Cameraman",
-    members: ["Sarthak More", "Saksham Jadhav", "Deep Nadkar"],
+    members: ["Sarthak More", "Saksham Jadhav", "Deep Nadkar", "Harshad Surve"],
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-7 h-7">
         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M12 15.75h-.75m.75 0H8.25m3.75 0V12m0-3.75H8.25m-3.75 0H3.75m4.5 0H4.5m15 0h-3.75m0 0V8.25m0 3.75v3.75m0-7.5a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75H15a.75.75 0 01-.75-.75v-.75A.75.75 0 0115 8.25zM6 12a.75.75 0 01.75-.75h.75a.75.75 0 01.75.75v.75a.75.75 0 01-.75.75H6.75a.75.75 0 01-.75-.75V12z" />
