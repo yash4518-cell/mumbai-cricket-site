@@ -1,29 +1,20 @@
-```
 # Dependencies
 node_modules/
-
-# Environment variables
-.env
-.env.local
-.env.*
 
 # Build outputs
 dist/
 build/
-target/
-
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+.next/
+.nuxt/
+out/
 
 # Logs
 *.log
 
-# Temporary files
-*.tmp
-*.swp
+# Environment variables
+.env
+.env.local
+*.env
 
 # IDE files
 .vscode/
@@ -31,41 +22,472 @@ __pycache__/
 *.swp
 *.swo
 
-# OS files
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-selfcheck.json
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Node.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+dist/
+build/
+.nyc_output
+coverage/
+.nyc_output/
+coverage/
+
+# Compiled and binary files
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.obj
+*.a
+*.lib
+*.out
+
+# Archives
+*.zip
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.gz
+*.rar
+*.7z
+
+# OS generated files
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Coverage reports
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Coverage directory used by tools like istanbul
 coverage/
-htmlcov/
-.coverage
+cov-report/
 
-# Package lock files (already exists in repo, but good to ignore variations)
-package-lock.json
-yarn.lock
+# Unit test reports
+junit.xml
+test-results/
 
-# MyPy cache
-.mypy_cache/
-# Pytest cache
+# Local configuration files
+config.local.*
+settings.local.*
+
+# Browser-sync
+.browser-sync*
+
+# Webpack
+webpack-stats.json
+
+# Jest
+jest-cache/
+
+# Babel
+.rpt2_cache/
+.closure-wrap/
+
+# Rollup
+.rollup.cache/
+
+# Terser
+.terser/
+
+# Vite
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+dist/
+build/
+
+# React
+*.hot-update.json
+*.hot-update.js
+
+# Vue
+*.vuepress/dist
+
+# Angular
+.angular/
+
+# Svelte
+.svelte-kit/
+
+# Gatsby
+.cache/
+public/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+output/
+dist/
+
+# Electron
+release/
+dist-electron/
+
+# Rust
+target/
+
+# Go
+*.o
+*.a
+*.so
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-selfcheck.json
 .pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
 
-# Compressed files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-```
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.hprof
+.hprof
+.DS_Store
+Thumbs.db
+target/
+.gradle/
+build/
+
+# C#
+*.sln
+*.csproj.user
+*.userosscache
+*.suo
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.obj
+*.log
+*.ilk
+*.pdb
+*.ipch
+*.bsc
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.VC.opendb
+[Bb]in
+[Oo]bj
+[Tt]est[Rr]esults
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opend......
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+......
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opendb
+*.VC.db
+*.VC.opendb
+*.VC.VC.db
+*.VC.VC.opend......
